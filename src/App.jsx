@@ -184,18 +184,7 @@ export default function App() {
   </div>
 </section>
 
-
-
-
-
-
-
-
-
-
-
-
-        <section id="about" className="section">
+<section id="about" className="section">
           <h2>About</h2>
           <div className="about">
             <p>
