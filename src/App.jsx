@@ -2,9 +2,9 @@ import "./styles.css";
 
 const LINKS = {
   email: "sol@jjai.dev",
-  github: "https://github.com/YOUR_GITHUB",        // <- change
-  linkedin: "https://www.linkedin.com/in/YOUR_ID", // <- change
-  resume: "#", // <- add later
+  github: "https://github.com/SOL7JJ",        // <- change
+  linkedin: "https://www.linkedin.com/in/james-jonathan-elie-303219366/", // <- change
+  resume: "#contact", // <- add later
 };
 
 const projects = [
@@ -53,6 +53,7 @@ export default function App() {
         <div className="brand">JJAI<span className="dot">.</span>dev</div>
         <nav className="navlinks">
           <a href="#projects">Projects</a>
+          <a href="#how-i-build">How I Build</a>
           <a href="#about">About</a>
           <a href="#contact">Contact</a>
         </nav>
@@ -118,6 +119,81 @@ export default function App() {
             ))}
           </div>
         </section>
+<section id="how-i-build" className="section">
+  <h2>How I Build</h2>
+  <p className="section-sub">
+    My approach to shipping reliable AI + web products.
+  </p>
+
+  <div className="grid">
+    <div className="project" style={{ cursor: "default" }}>
+      <div className="project-head">
+        <h3>1) Problem → Requirements</h3>
+      </div>
+      <p className="project-desc">
+        I clarify the goal, users, constraints, and what “success” means.
+      </p>
+      <div className="tagrow">
+        <Badge>Scope</Badge>
+        <Badge>Constraints</Badge>
+        <Badge>Success metrics</Badge>
+      </div>
+    </div>
+
+    <div className="project" style={{ cursor: "default" }}>
+      <div className="project-head">
+        <h3>2) Design → Architecture</h3>
+      </div>
+      <p className="project-desc">
+        I choose the simplest architecture that scales: data flow, model/API, and UI.
+      </p>
+      <div className="tagrow">
+        <Badge>System design</Badge>
+        <Badge>Trade-offs</Badge>
+        <Badge>Clean UX</Badge>
+      </div>
+    </div>
+
+    <div className="project" style={{ cursor: "default" }}>
+      <div className="project-head">
+        <h3>3) Data → Training → Evaluation</h3>
+      </div>
+      <p className="project-desc">
+        I build the dataset, train/iterate, and track metrics (Accuracy/F1, precision/recall).
+      </p>
+      <div className="tagrow">
+        <Badge>Dataset</Badge>
+        <Badge>Accuracy / F1</Badge>
+        <Badge>Error analysis</Badge>
+      </div>
+    </div>
+
+    <div className="project" style={{ cursor: "default" }}>
+      <div className="project-head">
+        <h3>4) Deploy → Improve</h3>
+      </div>
+      <p className="project-desc">
+        CI/CD, monitoring, and fast iteration based on feedback and real usage.
+      </p>
+      <div className="tagrow">
+        <Badge>GitHub</Badge>
+        <Badge>Vercel</Badge>
+        <Badge>Iteration</Badge>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
 
         <section id="about" className="section">
           <h2>About</h2>
