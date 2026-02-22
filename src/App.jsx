@@ -213,7 +213,7 @@ export default function App() {
         </section>
 
         <footer className="footer">
-          <span>© {new Date().getFullYear()} JJAI.dev</span>
+          <span>© {new Date().getFullYear()} jjai.dev</span>
           <span className="sep">•</span>
           <span>Built with React</span>
         </footer>
