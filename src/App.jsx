@@ -13,6 +13,7 @@ const projects = [
     description: "AI-powered chatbot helping KS3 students learn coding interactively.",
     tags: ["Education", "AI", "Chatbot"],
     link: "https://www.tutor-code-quest.com",
+    website: "tutor-code-quest.com",
   },
   {
     title: "Computer Vision Posture Classifier",
@@ -112,7 +113,12 @@ export default function App() {
                   <span className="arrow">↗</span>
                 </div>
                 <p className="project-desc">{p.description}</p>
-                {p.link.startsWith("http") && <span className="project-link">{p.link}</span>}
+                {p.website && (
+                  <div className="project-link-row">
+                    <span className="project-link-label">Website:</span>
+                    <span className="project-link">{p.website}</span>
+                  </div>
+                )}
                 <div className="tagrow">
                   {p.tags.map((t) => <Badge key={t}>{t}</Badge>)}
                 </div>
