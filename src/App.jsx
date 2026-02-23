@@ -12,7 +12,7 @@ const projects = [
     title: "CodeQuest AI",
     description: "AI-powered chatbot helping KS3 students learn coding interactively.",
     tags: ["Education", "AI", "Chatbot"],
-    link: "#",
+    link: "https://www.tutor-code-quest.com",
   },
   {
     title: "Computer Vision Posture Classifier",
