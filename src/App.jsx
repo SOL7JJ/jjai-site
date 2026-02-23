@@ -25,7 +25,12 @@ const projects = [
     title: "Freelance Web Builds",
     description: "Fast, responsive sites with clean UI and production-ready code.",
     tags: ["React", "Frontend", "UX"],
-    link: "#",
+    link: "https://www.yourguitarandpianolessons.co.uk",
+    websites: [
+      "https://www.yourguitarandpianolessons.co.uk",
+      "https://yourtaskist.com",
+      "https://www.cityofrefuge.co.uk",
+    ],
   },
 ];
 
@@ -107,10 +112,12 @@ export default function App() {
 
           <div className="grid">
             {projects.map((p) => (
-              <a key={p.title} className="project" href={p.link} target="_blank" rel="noreferrer">
+              <div key={p.title} className="project">
                 <div className="project-head">
                   <h3>{p.title}</h3>
-                  <span className="arrow">↗</span>
+                  {p.link.startsWith("http") && (
+                    <a className="arrow" href={p.link} target="_blank" rel="noreferrer">↗</a>
+                  )}
                 </div>
                 <p className="project-desc">{p.description}</p>
                 {p.website && (
@@ -119,10 +126,22 @@ export default function App() {
                     <span className="project-link">{p.website}</span>
                   </div>
                 )}
+                {p.websites && (
+                  <div className="project-multi-links">
+                    <span className="project-link-label">Freelance websites:</span>
+                    <div className="project-link-list">
+                      {p.websites.map((url) => (
+                        <a key={url} className="project-link" href={url} target="_blank" rel="noreferrer">
+                          {url}
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                )}
                 <div className="tagrow">
                   {p.tags.map((t) => <Badge key={t}>{t}</Badge>)}
                 </div>
-              </a>
+              </div>
             ))}
           </div>
         </section>
