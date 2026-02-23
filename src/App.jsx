@@ -112,6 +112,7 @@ export default function App() {
                   <span className="arrow">↗</span>
                 </div>
                 <p className="project-desc">{p.description}</p>
+                {p.link.startsWith("http") && <span className="project-link">Visit website</span>}
                 <div className="tagrow">
                   {p.tags.map((t) => <Badge key={t}>{t}</Badge>)}
                 </div>
