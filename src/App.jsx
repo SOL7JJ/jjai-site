@@ -3,7 +3,7 @@ import "./styles.css";
 const LINKS = {
   email: "sol@jjai.dev",
   github: "https://github.com/SOL7JJ",        // <- change
-  linkedin: "https://www.linkedin.com/in/james-jonathan-elie-303219366/", // <- change
+  linkedin: "https://www.linkedin.com/in/jonathan-elijah-303219366/", // <- change
   resume: "#contact", // <- add later
 };
 
