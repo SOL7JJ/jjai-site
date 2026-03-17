@@ -123,7 +123,9 @@ export default function App() {
                 {p.website && (
                   <div className="project-link-row">
                     <span className="project-link-label">Website:</span>
-                    <span className="project-link">{p.website}</span>
+                    <a className="project-link" href={p.link} target="_blank" rel="noreferrer">
+                      {p.website}
+                    </a>
                   </div>
                 )}
                 {p.websites && (
